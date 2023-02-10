@@ -1,0 +1,5 @@
+name: mmd
+type: module
+description: Missing Migrants Data Module
+package: mmd
+core_version_requirement: ^9 || ^10

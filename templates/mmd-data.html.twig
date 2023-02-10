@@ -1,0 +1,57 @@
+{# [module]/templates/my-template.html.twig #}
+<p>Test twig template!</p>
+
+<p>Title: {{ title }}</p>
+
+<div class="table-horizontal-container">
+  <table class="unfixed-table">
+    <thead>
+    <tr>
+      <th>Id</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+      <th>Region</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for mmd in mmd_data %}
+      <tr>
+        <td>{{ mmd.id }}</td>
+        <td>{{ mmd.region }}</td>
+        <td>{{ mmd.reportDate }}</td>
+        <td>{{ mmd.fieldYear }}</td>
+        <td>{{ mmd.month }}</td>
+        <td>{{ mmd.numberDead }}</td>
+        <td>{{ mmd.numberMissing }}</td>
+        <td>{{ mmd.totalDeadMissing }}</td>
+        <td>{{ mmd.numberOfSurvivors }}</td>
+        <td>{{ mmd.numberOfFemale }}</td>
+        <td>{{ mmd.numberOfMale }}</td>
+        <td>{{ mmd.numberOfChildren }}</td>
+        <td>{{ mmd.locationOfDeath }}</td>
+        <td>{{ mmd.informationSource }}</td>
+        <td>{{ mmd.reliability }}</td>
+        <td>{{ mmd.migrantRoute }}</td>
+        <td>{{ mmd.url }}</td>
+        <td>{{ mmd.unsdRegion }}</td>
+        <td>{{ mmd.sourceQuality }}</td>
+        <td>{{ mmd.latitude }}</td>
+        <td>{{ mmd.longtitude }}</td>
+        <td>{{ mmd.niD }}</td>
+        <td>{{ mmd.causeOfDeath }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>

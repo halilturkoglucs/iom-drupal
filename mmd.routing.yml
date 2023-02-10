@@ -1,0 +1,8 @@
+mmd.example:
+  path: '/data/missing-migrants'
+  defaults:
+    _title: 'Missing Migrants Data'
+    _controller: '\Drupal\mmd\Controller\MmdController::build'
+  requirements:
+    _permission: 'access content'
+

@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for mmd module.
+ */
+
+function mmd_theme($existing, $type, $theme, $path) {
+  return [
+    'mmd_data' => [
+      'variables' => [
+        'title' => NULL,
+        'mmd_data' => NULL,
+      ],
+    ],
+  ];
+}
